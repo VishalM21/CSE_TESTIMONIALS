@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <title> SAKSHI KUMARI | SAIL Year Book Portal </title>
+    <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../Profile Search _ SAIL Year Book Portal_files/bootstrap-4.4.1.min.css">
+    <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+        <link href="../Profile Search _ SAIL Year Book Portal_files/all.min.css" rel="stylesheet"></script>
+        
+        <link href="../Profile Search _ SAIL Year Book Portal_files/sail_logo.png" rel="shortcut icon" type="image/png">
+    
+
+    <!-- jQuery JS -->
+    <script src="../Profile Search _ SAIL Year Book Portal_files/jquery-3.4.1.min.js"></script>
+    <!-- JavaScript Cookie JS -->
+    <script src="../Profile Search _ SAIL Year Book Portal_files/js.cookie-2.2.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../Profile Search _ SAIL Year Book Portal_files/popper-1.16.0.min.js"></script>
+    <script src="../Profile Search _ SAIL Year Book Portal_files/bootstrap-4.4.1.min.js"></script>
+    <link rel="stylesheet" href="../Profile Search _ SAIL Year Book Portal_files/navbar.css">
+    
+    
+
+</head>
+<style>
+    a {
+        color: teal;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .panel-body .btn:not(.btn-block) {
+        width: 120px;
+        margin-bottom: 5px;
+    }
+    .card{
+        background: rgba(255, 209, 255, 0.3);
+        box-shadow: 0px 6px 12px rgba(216, 161, 216, 0.1);
+        border-radius: 8px;
+    }
+    body {
+        background-image: linear-gradient(to right, #9375E7, #FFF4D2);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        overflow-x: hidden;
+    }
+    body, html{
+        height: 100%;
+        width: 100%; 
+    }
+
+
+</style>
+
+<body class="d-flex flex-column h-100" style="font-family: 'Nunito', sans-serif;">
+    
+    <nav>
+        <script>
+            const userclick = () => {
+                const userbox = document.getElementById('nav-hamburg2');
+                if (userbox.style.display == 'block') {
+                    userbox.style.display = 'none';
+                }
+                else {
+                    userbox.style.display = 'block'
+                }
+
+                const smallnav = document.getElementById('nav-hamburg');
+                smallnav.style.display = 'none';
+            }   
+        </script>
+
+        <div class="navbar">
+            <a href="/yearbook/">
+                <div class="nav-images">
+                    <img src="../Profile Search _ SAIL Year Book Portal_files/sail.svg" alt="SAIL" class="nav-sail" />
+                    <img src="../Profile Search _ SAIL Year Book Portal_files/yearbook.svg" alt="YEARBOOK" class="nav-yearbook" />
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Profiles</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="flex-shrink-0">
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .MyProfileR_card {
+    display: flex;
+    height: auto;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.MyProfileR_card_detail {
+    margin: 10px;
+}
+
+.MyProfileR_card_card_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.MyProfileR_card_card_banch {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.MyProfileR_card_img {
+    height: 156px;
+    width: 156px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.MyProfileR_card_card_testimony {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+}
+.MyProfileR_card_hr {
+    border: 1px solid white;
+}
+
+.MyProfileR_Search {
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+}
+.ProfileR_Search_input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0px;
+    padding-left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ProfileR_Search_input:focus-visible {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.ProfileR_Search_input_i {
+    height: 33px;
+    position: relative;
+    right: 30px;
+}
+
+</style>
+    <div class="container-fluid mt-3">
+        <div class="row mb-2">
+            
+                <div class="col-xl-3 col-lg-12">
+                    <div class="container-fluid">
+                        <div class="card shadow">
+                            <div style="display: flex; justify-content: center; position: relative;">
+                                <img class="card-img-top" style="border-radius: 50%;width: 16vw;padding-top: 2vh;" width="100%" src="../Profile Search _ SAIL Year Book Portal_files/k.sakshi.jpg" alt="Profile Picture"/>
+                                
+                            </div>
+                            <div class="card-body">
+                                <h5 style="text-align: center;" class="card-title"><b style="display: flex; justify-content: center;">SAKSHI KUMARI</b></h5>
+                                <h6 class="card-subtitle" style="text-align: center;">
+                                    Electronics &amp; Communication Engineering
+                                    <br>
+                                    BTech
+                                    2020
+                                </h6>
+                                <br>
+                                
+                                <div class="card-text">
+                                    <p style="display: flex;justify-content: center;">
+                                        <a href="mailto:k.sakshi@iitg.ac.in"><i class="fa fa-envelope" style="font-size: 30px;color: black;padding: 0 10px 0 10px;"></i></a>
+                                        <!-- need to change -->
+                                        <a href="https://www.instagram.com/sakshi.18_11" target="_blank"><i class="fa fa-instagram" style="font-size: 30px;color: black;padding: 0 10px 0 10px;"></i></a> 
+                                        <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin" style="font-size: 30px;color: black;padding: 0 10px 0 10px;"></i></a> 
+                                    </p>
+                                    <p  style="display: flex; justify-content: center;"></p>
+                                    
+                                    <h6><b>Address</b></h6>
+                                    <p style="display: flex; justify-content: center;"></p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        
+                        <div class="card shadow" style="margin-top: 2vh;">
+                            <div class="card-header">
+                                <h6 class="mb-0">Best memories in campus?</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="card shadow" style="margin-top: 2vh;">
+                            <div class="card-header">
+                                <h6 class="mb-0">Biggest change since first year?</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="card shadow" style="margin-top: 2vh;">
+                            <div class="card-header">
+                                <h6 class="mb-0">Best thing you learned from here?</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="card shadow" style="margin-top: 2vh;">
+                            <div class="card-header">
+                                <h6 class="mb-0">One thing you&#x27;ll miss the most?</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="card shadow" style="margin-top: 2vh;">
+                            <div class="card-header">
+                                <h6 class="mb-0">One thing you regret not doing?</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-text text-justify">
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-12 mt-xl-0 mt-sm-4">
+                    <div class="container-fluid">
+                        <h3 class="text-center" style="font-weight: bold;">Testimonials</h3>
+                        
+                            
+                                <button type="button" class="btn btn-dark" style="width: 100%;" data-toggle="modal" data-target="#testimonial-modal">
+                                     Edit testimonial
+                                </button>
+                                <div class="modal fade" id="testimonial-modal" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title"> Edit testimonial</h6>
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span>&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea id="add-testimonial-form-content" autocomplete="off" class="form-control" rows="5" name="content" placeholder="Write your testimonial for SAKSHI KUMARI here">Meri pyaari bachi, mujhe kaise dhund ke dost bana liya re. Saath me kitne maze kiye apan ne chahe woh kameng pantry me khana banana ho, ya saath me movies dekhna, lake pe derr sari baate karna, BR aur CCD pe khana ya khoka me har din nye dishes try karna, ya scooty pe long drives pe jaana aur bhi bohot kuch. 
+
+Tu nhi milti toh me kuch na karta. Hamesha mere dukh me mera saath diya aur motivate kiya. Kaash thode din aur saath reh pate toh aur kitne maze kar pate par.
+
+Apan syd abhi door hai par mujhe pata hai ki yeh doori apne dosti ko kam nhi kar sakti. Tumhe bohot zyada yaad karunga aur bohot jaldi milenge. Tab tak achee se padna, aur daily message karke pareshan karte rehna :). all the besttt</textarea>
+                                                <br>
+                                                
+                                                <button class="btn btn-dark" style="width: 100%;" onclick="addTestimonial()">
+                                                     Edit testimonial
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/sumit200102092/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/sumit200102092.jpg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/sumit200102092/">
+                                    <div class="MyProfileR_card_card_name">SUMIT KUMAR</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Electronics &amp; Communication Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    Most innocent bear(was). Still cant believe u r same as i seen in 2nd yr. u got better arguments now, and of course looks. ek pic ke liye sabse zyaada &amp; achha poses karne wali.Will always miss ur mess ki thali &amp; its decoration.ur choice in ccd is good but coffee suggest karne se achha kabhi pila bhi diya karo special mention:gr8 chef.All The Best for future and wish u will get rid of all medicines
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/h.nandigrama/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/h.nandigrama.jpg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/h.nandigrama/">
+                                    <div class="MyProfileR_card_card_name">NANDIGRAMA HAREESH</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Computer Science &amp; Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    Meri pyaari bachi, mujhe kaise dhund ke dost bana liya re. Saath me kitne maze kiye apan ne chahe woh kameng pantry me khana banana ho, ya saath me movies dekhna, lake pe derr sari baate karna, BR aur CCD pe khana ya khoka me har din nye dishes try karna, ya scooty pe long drives pe jaana aur bhi bohot kuch. <br><br>Tu nhi milti toh me kuch na karta. Hamesha mere dukh me mera saath diya aur motivate kiya. Kaash thode din aur saath reh pate toh aur kitne maze kar pate par.<br><br>Apan syd abhi door hai par mujhe pata hai ki yeh doori apne dosti ko kam nhi kar sakti. Tumhe bohot zyada yaad karunga aur bohot jaldi milenge. Tab tak achee se padna, aur daily message karke pareshan karte rehna :). all the besttt
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                                    <button class="btn btn" data-toggle="modal" data-target="#testimonial-modal"><i style="color: black;font-family: 25px;" class="fas fa-edit"></i></button>
+                                    <button class="btn" onclick="deleteTestimonial(7584)" data-toggle="tooltip" title="Delete the testimonial from your profile.">
+                                        <i class="fa fa-trash" style="color: black;font-size: 25px;"></i>
+                                    </button>
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/g.deepanshi/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/g.deepanshi.jpeg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/g.deepanshi/">
+                                    <div class="MyProfileR_card_card_name">DEEPANSHI GARG</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Electronics &amp; Communication Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    My gorgeous friend, we became friend late but enjoyed a lot together. We get ready for every event together , you help us to get ready and tells what look nice and not. We were not able to spend a lot of time together but whatever we spend i enjoyed. Whenever i cooked something you became my chopper.<br>Hope you have a great future , always stay happy.<br>
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/k.sonali/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/k.sonali.jpg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/k.sonali/">
+                                    <div class="MyProfileR_card_card_name">SONALI KUMARI</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Electronics &amp; Communication Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    Kattu baccha (obviously vegetable cutter)<br>Most amazing girl I met in campus ,her transformation from the silent one to a headache is quite appreciable,Most hosiyar human and who never like anything .We are gossip queen ,can talk whole day . My stylist ,Therapist ,buddy and many more.<br> I want you to always stay happy and pretty.
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/m.bishal/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/m.bishal.jpg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/m.bishal/">
+                                    <div class="MyProfileR_card_card_name">BISHAL MONDAL</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Electronics &amp; Communication Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    One of the most precious gift I have ever got from God. &quot;Classmates se meri behna&quot;, I am lucky. Tere sath sari gam ki baate, Masti, tera samjhana, tere upar gussa hona, tere hat ka banaya khana, kitne memories hai. <br>Sweet si, hosiyar and sensible Princess .<br>Chalo ab baki Ghar ki baate Ghar mei. Iye to bas official dal diya. 
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/d.shubhradeep/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/d.shubhradeep.jpeg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/d.shubhradeep/">
+                                    <div class="MyProfileR_card_card_name">SHUBHRADEEP DAS</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Electronics &amp; Communication Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    It was great to have a friend like you.<br>Always energetic and cheerful.<br>Enjoyed all the parties and events with you…..which would have been so dull if you weren’t there!<br>Always stay happy and have the energy and cheerfulness!!!<br><br>Wishing you a very best of luck for your future!<br>May you fulfil all your dreams!!!!<br><br>
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/a.mallick/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/a.mallick.jpg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/a.mallick/">
+                                    <div class="MyProfileR_card_card_name">ARPITA MALLICK</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Mechanical Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    Hey sweetie, aur sab badhiya chal rha. Rajasthan me koi barish la sakta hai toh wo hi tum . Heheee. Aur aise hi chill rehna . And enjoy karte rehna. Gussa Kam karna and hassi jyada glow jyda ayega. My pro tip . Aur mujhe yad rakhna . Sath me baithke gossip karne ka maja hi alag.miss me ok. Byo byo
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                        <div class="MyProfileR_card">
+                            <a href="/yearbook/v.pynda/">
+                                <div class="MyProfileR_card_image">
+                                <img
+                                    alt=""
+                                    src="../Profile Search _ SAIL Year Book Portal_files/v.pynda.jpg"
+                                    class="MyProfileR_card_img">
+                                </div>
+                            </a>
+                            <div class="MyProfileR_card_detail">
+                                <a style="text-decoration: none; color: inherit;" href="/yearbook/v.pynda/">
+                                    <div class="MyProfileR_card_card_name">PYNDA NAGA VENKATA SAI VAMSI</div>
+                                    <div class="MyProfileR_card_card_banch">
+                                        Electronics &amp; Communication Engineering ,
+                                            BTech
+                                            2020
+                                    </div>
+                                </a>
+                                <div class="MyProfileR_card_card_testimony">
+                                    A good friend. All the best for future endeavors.
+                                </div>
+                                <div class="MyProfileR_card_card_buttons"></div>
+                            </div>
+                            <p style="position: absolute; right: 2.5vw;" >
+                                
+                            </p>
+                        </div>
+                        <hr class="MyProfileR_card_hr" />
+                          
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+    </main>
+    
+    <!-- Disable Emoji -->
+    <script src="../Profile Search _ SAIL Year Book Portal_files/disable_emoji.js"></script>
+
+
+</body>
+
+</html>
